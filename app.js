@@ -99,7 +99,7 @@ app.get("/demouser", async(req, res) => {
 app.use('/', userRouter);
 
 app.get('/', (req, res) => {
-    res.send("working");
+    res.redirect('/listings');
 });
 
 
